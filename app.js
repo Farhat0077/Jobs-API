@@ -30,7 +30,7 @@ app.use(rateLimiter({windowMs:  60 * 1000, max: 60 })
 );
 
 app.get('/', (req, res) => {
-  res.send('<h1>Jobs API</h1> <h2> Node JS</h2> ,<h3>Freecode Camp</h3>');
+  res.send('Jobs-API,Node JS');
 });
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/jobs',authenticateUser, jobsRouter);
